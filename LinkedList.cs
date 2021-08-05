@@ -69,5 +69,12 @@ namespace Data_Structures
             }
             return listStr;
         }
+
+        public void PrintBackword(SglNode node) {
+            if(node==null) return;
+            PrintBackword(node.next);
+            Console.Write(node.value + " - ");
+            return;
+        }
     }
 }

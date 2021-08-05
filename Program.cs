@@ -11,8 +11,9 @@ namespace Data_Structures
             // list.Add(1);
             // list.Add(2);
             // list.Add(3);
-            // list.Delete(2);
+            // //list.Delete(2);
             // Console.WriteLine(list.ToString());
+            // list.PrintBackword(list.head);
 
             // //! Doubly Linked List
             // DoublyLinkedList list = new DoublyLinkedList();
@@ -37,10 +38,23 @@ namespace Data_Structures
             bt.root = bt.AddNode(bt.root, 5);
             bt.root = bt.AddNode(bt.root, 1);
             bt.root = bt.AddNode(bt.root, 7);
-            bt.root = bt.AddNode(bt.root, -5);
+            //bt.root = bt.AddNode(bt.root, -5);
             bt.root = bt.AddNode(bt.root, 9);
             bt.root = bt.AddNode(bt.root, 6);
             bt.Print(bt.root);
+            //bt.Print_LNR(bt.root);
+            //bt.Print_RNL(bt.root);
+            Console.WriteLine("After Delete");            
+            // bt.Delete(1);
+            // bt.Delete(6);
+            // bt.Delete(9);
+            bt.Delete(7);
+            bt.Print(bt.root);
+
+            // //! Recursion
+            // var rec = new Recursion();
+            // Console.WriteLine(rec.Factorial(10));
+            // Console.WriteLine(rec.Factorial_NonRecursion(10));
         }
     }
 }
